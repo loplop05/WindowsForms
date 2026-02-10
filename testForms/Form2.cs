@@ -106,5 +106,11 @@ namespace testForms
             Form frm1 = new frmTimer();
             frm1.Show();
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            Form frm1 = new frmNotifyIcon();
+            frm1.Show();
+        }
     }
 }
