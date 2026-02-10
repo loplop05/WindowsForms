@@ -100,5 +100,11 @@ namespace testForms
             Form frm1 = new frmMonthCalender();
             frm1.Show();
         }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Form frm1 = new frmTimer();
+            frm1.Show();
+        }
     }
 }
