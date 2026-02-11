@@ -130,5 +130,11 @@ namespace testForms
             Form frm1 = new frmListView();
             frm1.Show();
         }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            Form frm1 = new frmErrorProvider();
+            frm1.Show();
+        }
     }
 }

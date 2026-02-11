@@ -183,6 +183,9 @@
     <EmbeddedResource Include="frmDateTimePicker.resx">
       <DependentUpon>frmDateTimePicker.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmErrorProvider.resx">
+      <DependentUpon>frmErrorProvider.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmImageList.resx">
       <DependentUpon>frmImageList.cs</DependentUpon>
     </EmbeddedResource>

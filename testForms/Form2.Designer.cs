@@ -248,6 +248,7 @@
             this.button17.TabIndex = 19;
             this.button17.Text = "Error Provider";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // Form2
             // 
