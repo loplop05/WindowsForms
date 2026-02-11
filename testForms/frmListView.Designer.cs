@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListView));
             this.listView1 = new System.Windows.Forms.ListView();
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnFillRandom = new System.Windows.Forms.Button();
@@ -40,20 +42,19 @@
             this.txtBoxName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.gbView = new System.Windows.Forms.GroupBox();
-            this.rbDetails = new System.Windows.Forms.RadioButton();
-            this.rbLargeIcons = new System.Windows.Forms.RadioButton();
-            this.rbSmallIcon = new System.Windows.Forms.RadioButton();
-            this.rbList = new System.Windows.Forms.RadioButton();
             this.rbTitle = new System.Windows.Forms.RadioButton();
+            this.rbList = new System.Windows.Forms.RadioButton();
+            this.rbSmallIcon = new System.Windows.Forms.RadioButton();
+            this.rbLargeIcons = new System.Windows.Forms.RadioButton();
+            this.rbDetails = new System.Windows.Forms.RadioButton();
             this.rbMale = new System.Windows.Forms.RadioButton();
             this.rbFemale = new System.Windows.Forms.RadioButton();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.gbView.SuspendLayout();
             this.SuspendLayout();
             // 
             // listView1
             // 
+            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.HideSelection = false;
             this.listView1.LargeImageList = this.imageList2;
             this.listView1.Location = new System.Drawing.Point(17, 174);
@@ -63,6 +64,18 @@
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            // 
+            // imageList2
+            // 
+            this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
+            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList2.Images.SetKeyName(0, "finn1.jpeg");
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "WhatsApp Image 2025-12-22 at 10.24.46 PM.jpeg");
             // 
             // btnAdd
             // 
@@ -92,6 +105,7 @@
             this.btnFillRandom.TabIndex = 3;
             this.btnFillRandom.Text = "Fill Random";
             this.btnFillRandom.UseVisualStyleBackColor = true;
+            this.btnFillRandom.Click += new System.EventHandler(this.btnFillRandom_Click);
             // 
             // label1
             // 
@@ -151,41 +165,17 @@
             this.gbView.TabStop = false;
             this.gbView.Text = "View";
             // 
-            // rbDetails
+            // rbTitle
             // 
-            this.rbDetails.AutoSize = true;
-            this.rbDetails.Location = new System.Drawing.Point(21, 27);
-            this.rbDetails.Name = "rbDetails";
-            this.rbDetails.Size = new System.Drawing.Size(70, 20);
-            this.rbDetails.TabIndex = 0;
-            this.rbDetails.TabStop = true;
-            this.rbDetails.Text = "Details";
-            this.rbDetails.UseVisualStyleBackColor = true;
-            this.rbDetails.CheckedChanged += new System.EventHandler(this.rbDetails_CheckedChanged);
-            // 
-            // rbLargeIcons
-            // 
-            this.rbLargeIcons.AutoSize = true;
-            this.rbLargeIcons.Location = new System.Drawing.Point(115, 27);
-            this.rbLargeIcons.Name = "rbLargeIcons";
-            this.rbLargeIcons.Size = new System.Drawing.Size(98, 20);
-            this.rbLargeIcons.TabIndex = 1;
-            this.rbLargeIcons.TabStop = true;
-            this.rbLargeIcons.Text = "Large Icons";
-            this.rbLargeIcons.UseVisualStyleBackColor = true;
-            this.rbLargeIcons.CheckedChanged += new System.EventHandler(this.rbLargeIcons_CheckedChanged);
-            // 
-            // rbSmallIcon
-            // 
-            this.rbSmallIcon.AutoSize = true;
-            this.rbSmallIcon.Location = new System.Drawing.Point(21, 72);
-            this.rbSmallIcon.Name = "rbSmallIcon";
-            this.rbSmallIcon.Size = new System.Drawing.Size(90, 20);
-            this.rbSmallIcon.TabIndex = 2;
-            this.rbSmallIcon.TabStop = true;
-            this.rbSmallIcon.Text = "Small Icon";
-            this.rbSmallIcon.UseVisualStyleBackColor = true;
-            this.rbSmallIcon.CheckedChanged += new System.EventHandler(this.rbSmallIcon_CheckedChanged);
+            this.rbTitle.AutoSize = true;
+            this.rbTitle.Location = new System.Drawing.Point(21, 98);
+            this.rbTitle.Name = "rbTitle";
+            this.rbTitle.Size = new System.Drawing.Size(54, 20);
+            this.rbTitle.TabIndex = 4;
+            this.rbTitle.TabStop = true;
+            this.rbTitle.Text = "Title";
+            this.rbTitle.UseVisualStyleBackColor = true;
+            this.rbTitle.CheckedChanged += new System.EventHandler(this.rbTitle_CheckedChanged);
             // 
             // rbList
             // 
@@ -199,17 +189,41 @@
             this.rbList.UseVisualStyleBackColor = true;
             this.rbList.CheckedChanged += new System.EventHandler(this.rbList_CheckedChanged);
             // 
-            // rbTitle
+            // rbSmallIcon
             // 
-            this.rbTitle.AutoSize = true;
-            this.rbTitle.Location = new System.Drawing.Point(21, 98);
-            this.rbTitle.Name = "rbTitle";
-            this.rbTitle.Size = new System.Drawing.Size(54, 20);
-            this.rbTitle.TabIndex = 4;
-            this.rbTitle.TabStop = true;
-            this.rbTitle.Text = "Title";
-            this.rbTitle.UseVisualStyleBackColor = true;
-            this.rbTitle.CheckedChanged += new System.EventHandler(this.rbTitle_CheckedChanged);
+            this.rbSmallIcon.AutoSize = true;
+            this.rbSmallIcon.Location = new System.Drawing.Point(21, 72);
+            this.rbSmallIcon.Name = "rbSmallIcon";
+            this.rbSmallIcon.Size = new System.Drawing.Size(90, 20);
+            this.rbSmallIcon.TabIndex = 2;
+            this.rbSmallIcon.TabStop = true;
+            this.rbSmallIcon.Text = "Small Icon";
+            this.rbSmallIcon.UseVisualStyleBackColor = true;
+            this.rbSmallIcon.CheckedChanged += new System.EventHandler(this.rbSmallIcon_CheckedChanged);
+            // 
+            // rbLargeIcons
+            // 
+            this.rbLargeIcons.AutoSize = true;
+            this.rbLargeIcons.Location = new System.Drawing.Point(115, 27);
+            this.rbLargeIcons.Name = "rbLargeIcons";
+            this.rbLargeIcons.Size = new System.Drawing.Size(98, 20);
+            this.rbLargeIcons.TabIndex = 1;
+            this.rbLargeIcons.TabStop = true;
+            this.rbLargeIcons.Text = "Large Icons";
+            this.rbLargeIcons.UseVisualStyleBackColor = true;
+            this.rbLargeIcons.CheckedChanged += new System.EventHandler(this.rbLargeIcons_CheckedChanged);
+            // 
+            // rbDetails
+            // 
+            this.rbDetails.AutoSize = true;
+            this.rbDetails.Location = new System.Drawing.Point(21, 27);
+            this.rbDetails.Name = "rbDetails";
+            this.rbDetails.Size = new System.Drawing.Size(70, 20);
+            this.rbDetails.TabIndex = 0;
+            this.rbDetails.TabStop = true;
+            this.rbDetails.Text = "Details";
+            this.rbDetails.UseVisualStyleBackColor = true;
+            this.rbDetails.CheckedChanged += new System.EventHandler(this.rbDetails_CheckedChanged);
             // 
             // rbMale
             // 
@@ -232,18 +246,6 @@
             this.rbFemale.TabStop = true;
             this.rbFemale.Text = "Female";
             this.rbFemale.UseVisualStyleBackColor = true;
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "WhatsApp Image 2025-12-22 at 10.24.46 PM.jpeg");
-            // 
-            // imageList2
-            // 
-            this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
-            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList2.Images.SetKeyName(0, "finn1.jpeg");
             // 
             // frmListView
             // 

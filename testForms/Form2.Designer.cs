@@ -47,6 +47,7 @@
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShowPart1
@@ -239,9 +240,19 @@
             this.button16.UseVisualStyleBackColor = true;
             this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
+            // button17
+            // 
+            this.button17.Location = new System.Drawing.Point(778, 276);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(169, 59);
+            this.button17.TabIndex = 19;
+            this.button17.Text = "Error Provider";
+            this.button17.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.ClientSize = new System.Drawing.Size(1017, 554);
+            this.Controls.Add(this.button17);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button14);
@@ -288,5 +299,6 @@
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button17;
     }
 }

@@ -93,5 +93,23 @@ namespace testForms
         {
             listView1.View = View.Tile;
         }
+
+        private void btnFillRandom_Click(object sender, EventArgs e)
+        {
+            for(int i = 1; i <= 10; i++)
+            {
+                ListViewItem item = new ListViewItem(i.ToString());
+                if (i % 2 == 0)
+                {
+                    item.ImageIndex = 0;
+                }
+                else
+                    item.ImageIndex = 1;
+
+
+                item.SubItems.Add("Person " + i);
+                listView1.Items.Add(item);
+            }
+        }
     }
 }

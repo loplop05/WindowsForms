@@ -88,6 +88,12 @@
     <Compile Include="frmDateTimePicker.Designer.cs">
       <DependentUpon>frmDateTimePicker.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmErrorProvider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmErrorProvider.Designer.cs">
+      <DependentUpon>frmErrorProvider.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmImageList.cs">
       <SubType>Form</SubType>
     </Compile>
