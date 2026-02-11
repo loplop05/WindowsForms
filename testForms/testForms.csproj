@@ -192,6 +192,9 @@
     <EmbeddedResource Include="frmPicsPractice.resx">
       <DependentUpon>frmPicsPractice.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmProgressBar.resx">
+      <DependentUpon>frmProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTextBox.resx">
       <DependentUpon>frmTextBox.cs</DependentUpon>
     </EmbeddedResource>
