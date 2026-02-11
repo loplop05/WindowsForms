@@ -142,5 +142,11 @@ namespace testForms
             Form frm1 = new frmTrackBar();
             frm1.Show();
         }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            Form frm1 = new frmNumericUpDown();
+            frm1.Show();
+        }
     }
 }

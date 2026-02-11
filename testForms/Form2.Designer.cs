@@ -49,6 +49,7 @@
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShowPart1
@@ -253,7 +254,7 @@
             // 
             // button18
             // 
-            this.button18.Location = new System.Drawing.Point(778, 360);
+            this.button18.Location = new System.Drawing.Point(603, 355);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(169, 59);
             this.button18.TabIndex = 20;
@@ -261,9 +262,20 @@
             this.button18.UseVisualStyleBackColor = true;
             this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
+            // button19
+            // 
+            this.button19.Location = new System.Drawing.Point(778, 355);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(169, 59);
+            this.button19.TabIndex = 21;
+            this.button19.Text = "Numeric Up Down";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
             // Form2
             // 
             this.ClientSize = new System.Drawing.Size(1017, 554);
+            this.Controls.Add(this.button19);
             this.Controls.Add(this.button18);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.button16);
@@ -314,5 +326,6 @@
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button19;
     }
 }
