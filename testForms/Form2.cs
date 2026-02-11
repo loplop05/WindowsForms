@@ -112,5 +112,17 @@ namespace testForms
             Form frm1 = new frmNotifyIcon();
             frm1.Show();
         }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            Form frm1 = new frmImageList();
+            frm1.Show();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            Form frm1 = new frmProgressBar();
+            frm1.Show();
+        }
     }
 }
