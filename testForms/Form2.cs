@@ -154,5 +154,11 @@ namespace testForms
             Form frm1 = new frmTabControl();
             frm1.Show();
         }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            Form frm1 = new frmGroupBoxVsPanel();
+            frm1.Show();
+        }
     }
 }
