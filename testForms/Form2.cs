@@ -148,5 +148,11 @@ namespace testForms
             Form frm1 = new frmNumericUpDown();
             frm1.Show();
         }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            Form frm1 = new frmTabControl();
+            frm1.Show();
+        }
     }
 }
