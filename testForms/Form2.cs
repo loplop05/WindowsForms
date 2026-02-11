@@ -160,5 +160,11 @@ namespace testForms
             Form frm1 = new frmGroupBoxVsPanel();
             frm1.Show();
         }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            Form frm1 = new frmColorDialog();
+            frm1.Show();
+        }
     }
 }

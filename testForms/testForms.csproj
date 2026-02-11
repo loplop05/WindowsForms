@@ -70,6 +70,12 @@
     <Compile Include="frmCheckedListBox.Designer.cs">
       <DependentUpon>frmCheckedListBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmColorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmColorDialog.Designer.cs">
+      <DependentUpon>frmColorDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmComboBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCheckedListBox.resx">
       <DependentUpon>frmCheckedListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmColorDialog.resx">
+      <DependentUpon>frmColorDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmComboBox.resx">
       <DependentUpon>frmComboBox.cs</DependentUpon>
