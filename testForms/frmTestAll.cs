@@ -15,6 +15,18 @@ namespace testForms
         public frmTestAll()
         {
             InitializeComponent();
+        
+            listView1.FullRowSelect = true;
+            listView1.GridLines = true;
+
+            listView1.Columns.Clear();   // important
+            listView1.Columns.Add("ID", 30);
+            listView1.Columns.Add("Name", 200);
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
