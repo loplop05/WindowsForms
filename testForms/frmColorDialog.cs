@@ -54,5 +54,29 @@ namespace testForms
                 MessageBox.Show(saveFileDialog1.FileName);
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.InitialDirectory = @"C:\";
+
+            openFileDialog1.Filter = "Text Files|*.txt|All Files|*.*";
+            openFileDialog1.FilterIndex = 2;
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                MessageBox.Show(openFileDialog1.FileName);
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Multiselect = true;
+            if(openFileDialog1.ShowDialog()==DialogResult.OK)
+            {
+                foreach(string file in openFileDialog1.FileNames)
+                {
+                    MessageBox.Show(file);
+                }
+            }
+        }
     }
 }
