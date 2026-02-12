@@ -172,6 +172,12 @@
     <Compile Include="frmTabControl.Designer.cs">
       <DependentUpon>frmTabControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTestAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTestAll.Designer.cs">
+      <DependentUpon>frmTestAll.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTextBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -254,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTabControl.resx">
       <DependentUpon>frmTabControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTestAll.resx">
+      <DependentUpon>frmTestAll.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTextBox.resx">
       <DependentUpon>frmTextBox.cs</DependentUpon>

@@ -166,5 +166,11 @@ namespace testForms
             Form frm1 = new frmColorDialog();
             frm1.Show();
         }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            Form frm1 = new frmTestAll();
+            frm1.Show();
+        }
     }
 }
