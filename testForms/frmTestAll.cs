@@ -20,8 +20,10 @@ namespace testForms
             listView1.GridLines = true;
 
             listView1.Columns.Clear();   // important
-            listView1.Columns.Add("ID", 30);
-            listView1.Columns.Add("Name", 200);
+            listView1.Columns.Add("ID", 100);
+            listView1.Columns.Add("Name", 100);
+            listView1.Columns.Add("Position", 100);
+            listView1.Columns.Add("Salary", 100);
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
