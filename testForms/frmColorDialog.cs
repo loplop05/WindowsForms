@@ -34,5 +34,13 @@ namespace testForms
             }
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (fontDialog1.ShowDialog() == DialogResult.OK)
+            {
+                textBox1.Font = fontDialog1.Font;
+            }
+        }
     }
 }

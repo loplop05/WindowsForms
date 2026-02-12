@@ -104,7 +104,7 @@ namespace testForms
                     item.ImageIndex = 0;
                 }
                 else
-                    item.ImageIndex = 1;
+                    item.ImageIndex = 0;
 
 
                 item.SubItems.Add("Person " + i);
