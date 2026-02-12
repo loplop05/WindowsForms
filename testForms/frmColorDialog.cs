@@ -42,5 +42,17 @@ namespace testForms
                 textBox1.Font = fontDialog1.Font;
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.InitialDirectory = @"C:\";
+            saveFileDialog1.DefaultExt = "txt";
+            saveFileDialog1.Filter = "Text Files|*.txt|All Files|*.*";
+            saveFileDialog1.FilterIndex = 2;
+            if(saveFileDialog1.ShowDialog()==DialogResult.OK)
+            {
+                MessageBox.Show(saveFileDialog1.FileName);
+            }
+        }
     }
 }
