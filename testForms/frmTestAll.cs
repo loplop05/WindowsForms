@@ -23,7 +23,9 @@ namespace testForms
             listView1.Columns.Add("ID", 100);
             listView1.Columns.Add("Name", 100);
             listView1.Columns.Add("Position", 100);
+            listView1.Columns.Add("Department", 100);
             listView1.Columns.Add("Salary", 100);
+            listView1.Columns.Add("Salary With Social Securtity ", 300);
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)

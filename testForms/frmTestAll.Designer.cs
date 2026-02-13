@@ -29,26 +29,49 @@
         private void InitializeComponent()
         {
             this.listView1 = new System.Windows.Forms.ListView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listView1
             // 
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(138, 157);
+            this.listView1.Location = new System.Drawing.Point(148, 142);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(752, 345);
+            this.listView1.Size = new System.Drawing.Size(882, 379);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(312, 69);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(171, 58);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Add";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(630, 69);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(171, 58);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Search";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // frmTestAll
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1180, 627);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.listView1);
+            this.IsMdiContainer = true;
             this.Name = "frmTestAll";
             this.Text = "frmTestAll";
             this.ResumeLayout(false);
@@ -58,5 +81,7 @@
         #endregion
 
         private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
